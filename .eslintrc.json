@@ -1,0 +1,86 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "flowtype"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "cordova": false,
+    "alert": false,
+    "cancelAnimationFrame": false,
+    "cancelIdleCallback": false,
+    "confirm": false,
+    "__DEV__": false,
+    "__SERVER__": false,
+    "document": false,
+    "localStorage": false,
+    "navigator": false,
+    "requestAnimationFrame": false,
+    "requestIdleCallback": false,
+    "window": false
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "class-methods-use-this": "off",
+    "eqeqeq": ["error", "allow-null"],
+    "id-length": "off",
+    "linebreak-style": ["off", "unix"],
+    "max-len": [
+      "error",
+      100,
+      2,
+      {
+        "ignoreUrls": true
+      }
+    ],
+    "new-cap": "off",
+    "no-mixed-operators": "off",
+    "no-multi-assign": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-prototype-builtins": "off",
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-return-assign": "off",
+    "no-underscore-dangle": "off",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true,
+        "allowUnboundThis": true
+      }
+    ],
+    "prefer-const": "off",
+    "radix": ["error", "as-needed"],
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-duplicate-props": "error",
+    "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-unused-prop-types": "off",
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "flowtype/generic-spacing": "off",
+    "flowtype/space-after-type-colon": "off"
+  }
+}
